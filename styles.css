@@ -1,13 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+@keyframes HintBack {
+    0% {background-color: deepskyblue; }
+    25%{background-color: green;}
+    50%{background-color: yellow;}
+    75%{background-color: white;}
+    100%{background-color: deepskyblue;}
+
+}
+
 body{
     background-color: black;
     color: white;
+
+}
+
+.Hint{
+    animation: HintBack;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+p{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 50pt;
+    margin-left: 10px;
+    position: relative;
+
 }
 
 a{
     color: greenyellow;
     text-decoration: none;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 50pt;
+    text-align: left;
 }
+
 
 a:hover{
     color: blueviolet;
+}
+
+.Choice{
+    text-align: center;
+}
+
+h1{
+    color: red;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 200pt;
+    float: left;
+}
+
+.RedBox{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    margin-left: 400px;
+    margin-bottom: 300px;
+    float: left;
+}
+
+.BlueBox{
+    background-color: deepskyblue;
+    width: 200px;
+    height: 200px;
+    margin-right: 400px;
+    margin-bottom: 300px;
+    float: right;
+}
+
+.Hint1{
+    color: red;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 200pt;
+}
+
+.Pass1{
+    float: left;
+    padding-left: 50px;
+    /*margin-top: 200px;*/
+   /* margin-bottom: 300px; */
+}
+
+.Fail1{
+    float: right;
+    padding-right: 50px;
+    /*padding-top: 200px;
+    margin-bottom: 300px;*/
+}
+
+.homeLink{
+    float: left;
+    padding-left: 800px;
 }
