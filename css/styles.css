@@ -4,9 +4,16 @@
 @keyframes HintBack {
     0% {background-color: deepskyblue; }
     25%{background-color: green;}
-    50%{background-color: yellow;}
-    75%{background-color: white;}
+    50%{background-color: rgb(170, 170, 32);}
+    75%{background-color: rgb(236, 109, 5);}
     100%{background-color: deepskyblue;}
+
+}
+
+@keyframes WakeText {
+    0% {color: red; }   
+    50%{color: yellow;}
+    100%{color: red;}
 
 }
 
@@ -26,8 +33,16 @@ p{
     font-family: 'Abril Fatface', cursive;
     font-size: 50pt;
     margin-left: 10px;
+    width: 1000px;
+    height: 20px;
+    float: right;
     position: relative;
+    padding-bottom: 100px;
 
+}
+
+.Now{
+    padding-bottom: 0px;
 }
 
 a{
@@ -43,8 +58,48 @@ a:hover{
     color: blueviolet;
 }
 
+.hintReturn{
+    float: left;
+    margin-left: 375px;
+}
+
+.Door1{
+    float: left;
+    
+    width: 100px;
+    height: 400px;
+    margin-top: -100px;
+}
+
+.Door2{
+    float: left;
+    background-color: purple;
+    width: 100px;
+    height: 400px;
+    margin-top: -100px;
+}
+
+.Door3{
+    float: left;
+    
+    width: 100px;
+    height: 400px;
+    margin-top: -100px;
+
+}
+
+.DoorLink1{
+    
+    background-color: red;
+}
+
+.DoorLink1:hover{
+    background-color: rgb(236, 109, 5);
+}
+
 .Choice{
-    text-align: center;
+    margin-top: 100px;
+    float: left;
 }
 
 h1{
@@ -52,7 +107,14 @@ h1{
     font-family: 'Bebas Neue', cursive;
     text-align: center;
     font-size: 200pt;
+    /*height: 100px;*/
     float: left;
+}
+
+.WakeUp{
+    animation: WakeText;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
 }
 
 .RedBox{
@@ -60,7 +122,7 @@ h1{
     width: 200px;
     height: 200px;
     margin-left: 400px;
-    margin-bottom: 300px;
+    margin-bottom: 50px;
     float: left;
 }
 
@@ -69,7 +131,7 @@ h1{
     width: 200px;
     height: 200px;
     margin-right: 400px;
-    margin-bottom: 300px;
+    margin-bottom: 50px;
     float: right;
 }
 
@@ -83,15 +145,15 @@ h1{
 .Pass1{
     float: left;
     padding-left: 50px;
-    /*margin-top: 200px;*/
+    margin-top: 100px;
    /* margin-bottom: 300px; */
 }
 
 .Fail1{
     float: right;
     padding-right: 50px;
-    /*padding-top: 200px;
-    margin-bottom: 300px;*/
+    margin-top: 45px;
+    
 }
 
 .homeLink{
