@@ -10,6 +10,15 @@
 
 }
 
+@keyframes HintText {
+    0% {color: white; }
+    25%{color: green;}
+    50%{color: rgb(170, 170, 32);}
+    75%{color: red;}
+    100%{color: white;}
+
+}
+
 @keyframes WakeText {
     0% {color: red; }   
     50%{color: yellow;}
@@ -23,6 +32,10 @@ body{
 
 }
 
+.EndB{
+    background-color: grey;
+}
+
 .Hint{
     animation: HintBack;
     animation-duration: 10s;
@@ -31,14 +44,18 @@ body{
 
 p{
     font-family: 'Abril Fatface', cursive;
-    font-size: 50pt;
+    font-size: 40pt;
     margin-left: 10px;
     width: 1000px;
     height: 20px;
     float: right;
     position: relative;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 
+}
+
+.EndP{
+    color: black;
 }
 
 .Now{
@@ -60,13 +77,23 @@ a:hover{
 
 .hintReturn{
     float: left;
-    margin-left: 33%;
+    margin-left: 90px;
+}
+
+.hintReturn2{
+    float: left;
+    margin-left: -110px;
+}
+
+.hintReturn3{
+    float: left;
+    margin-left: -10px;
 }
 
 .Doors{
     position: absolute;
     margin-left:32%;
-    margin-top: 700px;
+    margin-top: 500px;
 }
 
 .Objects{
@@ -74,84 +101,127 @@ a:hover{
     margin-left:19%;
     margin-top: 850px;
 }
+
+.Lang{
+    position: absolute;
+    margin-left:19%;
+    margin-right: 10px;
+    margin-top: 750px;
+}
+
+.Direct{
+    position: absolute;
+    margin-left: 28%;
+    margin-right: 10px;
+    margin-top: 750px;
+}
+
 .Door1{
     float: left;
     position: relative;
     margin-right: 50px;
     width: 200px;
     height: 400px;
-    margin-top: 200px;
+    margin-top: -440px;
 }
 
 .Door2{
     float: left;
     position: relative;
-    margin-right: 50px;
+    margin-left: 1000px;
     width: 200px;
     height: 400px;
-    margin-top: 200px;
+    margin-top: -440px;
 }
 
 .Door3{
     float: left;
     position: relative;
-    margin-right: 50px;
+    margin-left: -500px;
     width: 200px;
     height: 400px;
-    margin-top: 200px;
+    margin-top: -30px;
+
+}
+
+.Door4{
+    float: left;
+    position: relative;
+    margin-left: 800px;
+    width: 200px;
+    height: 400px;
+    margin-top: 0px;
 
 }
 
 .Lamp{
     float: left;
     position: relative;
-    margin-right: 50px;
-    width: 200px;
-    height: 400px;
-    margin-top: 200px;
+    margin-left: -250px;
+    width: 150px;
+    height: 350px;
+    margin-top: -320px;
 }
 
 .Cup{
     float: left;
     position: relative;
-    margin-right: 50px;
+    margin-left: 250px;
     width: 200px;
     height: 200px;
-    margin-top: 300px;
+    margin-top: -600px;
 }
 
 .Chair{
     float: left;
     position: relative;
-    margin-right: 50px;
+    margin-left: 950px;
     width: 400px;
     height: 400px;
-    margin-top: 250px;
+    margin-top: -300px;
 }
 
 .Book{
     float: left;
     position: relative;
-    margin-right: 50px;
-    width: 400px;
-    height: 400px;
-    margin-top: 250px;
+    margin-left: 200px;
+    width: 300px;
+    height: 300px;
+    margin-top: -300px;
+}
+
+.Langs{
+    padding-right: 15px;
+}
+
+.Directs{
+    padding-right: 25px;
 }
 
 .Choice{
-    margin-top: 100px;
+    margin-top: 0px;
+    margin-left: 90px;
     float: left;
 }
 
 .Choice2{
     margin-top: 0px;
+    margin-left: 90px;
     padding-bottom: 0px;
     float: left;
 }
 
 .Choice3{
     margin-top: 0px;
-    margin-left: 30%;
+    margin-left: 0px;
+    padding-bottom: 0px;
+    float: left;
+}
+
+.Choice4{
+    margin-top: 0px;
+    margin-left: 50px;
+    padding-bottom: 0px;
     float: left;
 }
 
@@ -171,6 +241,10 @@ h1{
     float: left;
 }
 
+.End{
+    color: white;
+}
+
 .WakeUp{
     animation: WakeText;
     animation-duration: .5s;
@@ -179,21 +253,35 @@ h1{
 
 .RedBox{
     background-color: red;
-    width: 200px;
-    height: 200px;
-    margin-left: 400px;
+    width: 150px;
+    height: 150px;
+    margin-left: 100px;
     margin-bottom: 50px;
     float: left;
 }
 
 .BlueBox{
     background-color: deepskyblue;
-    width: 200px;
-    height: 200px;
-    margin-right: 400px;
+    width: 150px;
+    height: 150px;
+    margin-right: 700px;
     margin-bottom: 50px;
     float: right;
 }
+
+
+.Page:hover{
+    background-color: red;
+}
+.Corner{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    margin-left: 1750px;
+    float: right;
+}
+
 
 .Hint1{
     color: red;
@@ -209,21 +297,36 @@ h1{
     font-size: 50pt;
 }
 
+.Hint3{
+    color: white;
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    font-size: 40pt;
+}
+
+.Hint3:hover{
+    animation: HintText;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
 .Pass1{
     float: left;
-    padding-left: 50px;
-    margin-top: 100px;
+    margin-left: -80%;
+    margin-top: 0px;
    /* margin-bottom: 300px; */
 }
 
+
 .Fail1{
     float: right;
-    padding-right: 50px;
-    margin-top: 45px;
+    margin-right: 100px;
+    margin-top: 0px;
     
 }
 
 .homeLink{
     float: left;
-    padding-left: 800px;
+    margin-left: 90px;
 }
+
